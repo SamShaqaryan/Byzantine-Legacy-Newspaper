@@ -8,71 +8,78 @@
     background-size: cover;
     filter: blur(5px);
 }
-
-form {
-    width: 350px;
-    position: relative;
-    .btn {
-        outline: none;
-        border: none;
-        cursor: pointer;
-        display: inline-block;
-        margin: 0 auto;
-        padding: 0.9rem 2.5rem;
-        text-align: center;
-        background-color: #47AB11;
-        color: #fff;
-        border-radius: 4px;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-        font-size: 17px;
-    }
-    .form-field {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        margin-bottom: 1rem;
+.login-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form {
+        width: 350px;
         position: relative;
-        &:nth-child(1)::before {
-            background-image: url('/assets/images/auth/user-icon.png');
-            width: 20px;
-            height: 20px;
-            top: 15px;
+        .btn {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 0.9rem 2.5rem;
+            text-align: center;
+            background-color: #47AB11;
+            color: #fff;
+            border-radius: 4px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            font-size: 17px;
         }
-        &:nth-child(2)::before {
-            background-image: url('/assets/images/auth/lock-icon.png');
-            width: 16px;
-            height: 16px;
+        .form-field {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            position: relative;
+            &:nth-child(1)::before {
+                background-image: url('/assets/images/auth/user-icon.png');
+                width: 20px;
+                height: 20px;
+                top: 15px;
+            }
+            &:nth-child(2)::before {
+                background-image: url('/assets/images/auth/lock-icon.png');
+                width: 16px;
+                height: 16px;
+            }
+            &::before {
+                font-size: 20px;
+                position: absolute;
+                left: 15px;
+                top: 17px;
+                color: #888888;
+                content: " ";
+                display: block;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
         }
-        &::before {
-            font-size: 20px;
-            position: absolute;
-            left: 15px;
-            top: 17px;
-            color: #888888;
-            content: " ";
+        input {
+            font-family: inherit;
+            width: 100%;
+            outline: none;
+            background-color: #fff;
+            border-radius: 4px;
+            border: none;
             display: block;
-            background-size: cover;
-            background-repeat: no-repeat;
+            padding: 0.9rem 0.7rem;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            font-size: 17px;
+            color: #4A4A4A;
+            text-indent: 40px;
         }
     }
-    input {
-        font-family: inherit;
-        width: 100%;
-        outline: none;
-        background-color: #fff;
-        border-radius: 4px;
-        border: none;
-        display: block;
-        padding: 0.9rem 0.7rem;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-        font-size: 17px;
-        color: #4A4A4A;
-        text-indent: 40px;
-    }
+
 }
+
